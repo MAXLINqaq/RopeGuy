@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
     public bool onGround;//地面检测
     Vector2 desiredVelocity;//期望水平速度
 
-    public bool needEffectJump;
 
     // Start is called before the first frame update
     void Start()
@@ -188,14 +187,7 @@ public class PlayerController : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             onGround = Physics2D.Linecast(transform.position, transform.position + new Vector3(-0.5f + 0.5f * i, -0.54f, 0), 1 << LayerMask.NameToLayer("Ground"));
-            if (onGround)
-            {
-                if(needEffectJump==false)
-                {
-                    needEffectJump = true;
-                }
-                break;
-            }
+            if (onGround)break;
         }
     }
 
