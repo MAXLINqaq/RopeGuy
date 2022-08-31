@@ -5,13 +5,12 @@ using UnityEngine;
 public class Box : MonoBehaviour
 {
     public Sprite brokenBox;
-    
+
 
     public GameObject[] dropItems;
     //private float damageRadius;
     public GameObject[] parts;
-    public ParticleSystem effcet;
-
+    public  ParticleSystem effcet;
     private bool wasHit;
     private int boxHp1;
     private int boxHp2;
@@ -20,6 +19,8 @@ public class Box : MonoBehaviour
     void Start()
     {
         hitCount = 0;
+        effcet = GetComponent<ParticleSystem>();
+
         //damageRadius = 6;
     }
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,6 +32,7 @@ public class Box : MonoBehaviour
             Hit();
         }
     }
+
     public void BoxInit(int hp1, int hp2)
     {
         boxHp1 = hp1;
@@ -70,8 +72,8 @@ public class Box : MonoBehaviour
     }
 
 
-    
-    
+
+
     /*
     public void PartExplode(){
         for(int i=0;i<parts.Length;i++){
@@ -88,7 +90,7 @@ public class Box : MonoBehaviour
         }
     }
     */
-    
+
     public void ExploreHitDistance1()
     {
         hitCount += 11;

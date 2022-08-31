@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6970666203010089658}
   - component: {fileID: 5431634253225222649}
   - component: {fileID: 4886684588646190700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crack6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 720621442552711056}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.26, y: 0.26, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -122,7 +122,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.49, y: 0.19}
+    oldSize: {x: 1.53125, y: 0.59375}
     newSize: {x: 0.49, y: 0.19}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -130,10 +130,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.035, y: 0.095}
-      - {x: -0.24499999, y: 0.035}
-      - {x: -0.24499999, y: -0.074999996}
-      - {x: -0.225, y: -0.095}
-      - {x: 0.044999998, y: -0.095}
-      - {x: 0.24499999, y: 0.015}
+    - - {x: 0.014213171, y: 0.06463443}
+      - {x: -0.23662327, y: 0.0077756774}
+      - {x: -0.24070531, y: -0.033498496}
+      - {x: -0.17771667, y: -0.07786311}
+      - {x: -0.12547366, y: -0.091003865}
+      - {x: -0.1228155, y: -0.090357386}
+      - {x: -0.12129048, y: -0.09004096}
+      - {x: 0.17483906, y: 0.01599145}
+      - {x: 0.20625772, y: 0.05060103}
       - {x: 0.24499999, y: 0.095}

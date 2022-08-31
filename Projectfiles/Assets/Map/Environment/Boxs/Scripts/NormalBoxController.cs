@@ -52,7 +52,7 @@ public class NormalBoxController : Box
         }
         if (mode == 2)
         {
-            for (int i = 0; i < parts.Length*2; i++)
+            for (int i = 0; i < parts.Length * 2; i++)
             {
                 GameObject newPart = Instantiate(parts[i % 5]);
                 newPart.transform.position = transform.position;
